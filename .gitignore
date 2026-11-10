@@ -1,0 +1,7 @@
+dist/
+release/
+app/bin/
+app/obj/
+app/*.user
+catalog.local.json
+__pycache__/

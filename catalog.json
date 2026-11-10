@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "apps": [
+    {
+      "id": "cxl-remote",
+      "name": "CXL Remote",
+      "version": "2.2.1",
+      "device": "Cardputer XL",
+      "chip": "esp32s3",
+      "category": "Tools",
+      "description": "Remote desktop for the Cardputer XL: the PC (or an Arduino UNO Q) streams its screen as JPEG tiles to the external ILI9341, the Cardputer sends keyboard, mouse and sound back. M5 Unit Joystick2 as the mouse (G0 left click, stick button right click), TIC-80 and CLI session modes, hotspot mode with NAT, charge mode.",
+      "notes": "Needs cxl_remote_server.py (or CXLRemoteServer.exe) running on the PC.",
+      "flash_size": "8MB",
+      "reset": "default",
+      "baud": 921600,
+      "released": "2026-11-09",
+      "files": [
+        {
+          "name": "bootloader.bin",
+          "offset": "0x0",
+          "size": 20112,
+          "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/cxl-remote-v2.2.1/bootloader.bin"
+        },
+        {
+          "name": "partitions.bin",
+          "offset": "0x8000",
+          "size": 3072,
+          "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/cxl-remote-v2.2.1/partitions.bin"
+        },
+        {
+          "name": "boot_app0.bin",
+          "offset": "0xe000",
+          "size": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/cxl-remote-v2.2.1/boot_app0.bin"
+        },
+        {
+          "name": "app.bin",
+          "offset": "0x10000",
+          "size": 1221824,
+          "sha256": "0cde4868dfe0e361599540679ac7c37fe36ca4ed22c9da84f33b33f1105da84e",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/cxl-remote-v2.2.1/app.bin"
+        }
+      ]
+    },
+    {
+      "id": "doom",
+      "name": "Doom (shareware)",
+      "version": "1.1.0",
+      "device": "Cardputer XL",
+      "chip": "esp32s3",
+      "category": "Games",
+      "description": "Doom shareware episode on the Cardputer XL at about 27 fps on the external screen. Joystick2 turns and walks, arrows strafe, ' or G0 fires, l uses; Opt opens quick settings (volume, brightness, turn speed, screen, calibration). Saves to flash.",
+      "notes": "Based on romalik/m5cardputer_doom (GBADoom / prBoom, GPL-2.0).",
+      "flash_size": "8MB",
+      "reset": "default",
+      "baud": 921600,
+      "released": "2026-11-09",
+      "files": [
+        {
+          "name": "bootloader.bin",
+          "offset": "0x0",
+          "size": 20112,
+          "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/doom-v1.1.0/bootloader.bin"
+        },
+        {
+          "name": "partitions.bin",
+          "offset": "0x8000",
+          "size": 3072,
+          "sha256": "1df578d7448730186a5301a69ba2c1d77c627b9f2014e1ec40581cf7dd60b563",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/doom-v1.1.0/partitions.bin"
+        },
+        {
+          "name": "boot_app0.bin",
+          "offset": "0xe000",
+          "size": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/doom-v1.1.0/boot_app0.bin"
+        },
+        {
+          "name": "app.bin",
+          "offset": "0x10000",
+          "size": 5880624,
+          "sha256": "4f2a9008e676cbb71956f7de0d45d4e9ff1ad01b48a9b0c66da1ccb17a6233bb",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/doom-v1.1.0/app.bin"
+        }
+      ]
+    },
+    {
+      "id": "duskos",
+      "name": "DuskOS",
+      "version": "0.11.0",
+      "device": "Cardputer XL",
+      "chip": "esp32s3",
+      "category": "System",
+      "description": "Windowed everyday-laptop system for the Cardputer: notes, calendar (Dzien), DuskOffice (Write, Sheets, Slides), music player, Dusk Code IDE with its own C compiler, terminal, calculator, QR, games, Dusk Copilot (Gemini). Joystick2 as the pointer, USB disk mode.",
+      "notes": "Uses a 6 MB FAT partition for your files: installing another app over it wipes them.",
+      "flash_size": "8MB",
+      "reset": "1200bps",
+      "baud": 921600,
+      "released": "2026-11-09",
+      "files": [
+        {
+          "name": "bootloader.bin",
+          "offset": "0x0",
+          "size": 20112,
+          "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/duskos-v0.11.0/bootloader.bin"
+        },
+        {
+          "name": "partitions.bin",
+          "offset": "0x8000",
+          "size": 3072,
+          "sha256": "b3971b9654cdcc4475d172a9693d80139644a9f21f5ca8cc0e54349ab8d5970f",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/duskos-v0.11.0/partitions.bin"
+        },
+        {
+          "name": "boot_app0.bin",
+          "offset": "0xe000",
+          "size": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/duskos-v0.11.0/boot_app0.bin"
+        },
+        {
+          "name": "app.bin",
+          "offset": "0x10000",
+          "size": 1982080,
+          "sha256": "aa27af02f6dff2aea529a234927fc7dba7568046f5a203d40db2062a3d2fd5d7",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/duskos-v0.11.0/app.bin"
+        }
+      ]
+    },
+    {
+      "id": "river-forge",
+      "name": "River Forge",
+      "version": "1.0.0",
+      "device": "Cardputer XL",
+      "chip": "esp32s3",
+      "category": "Games",
+      "description": "Build a boat from blocks and sail it down a dangerous river in 3D: 10 stages, treasure at the end, sandbox mode. Joystick2 steers the build cursor and the camera.",
+      "notes": "",
+      "flash_size": "8MB",
+      "reset": "default",
+      "baud": 921600,
+      "released": "2026-11-10",
+      "files": [
+        {
+          "name": "bootloader.bin",
+          "offset": "0x0",
+          "size": 20112,
+          "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/river-forge-v1.0.0/bootloader.bin"
+        },
+        {
+          "name": "partitions.bin",
+          "offset": "0x8000",
+          "size": 3072,
+          "sha256": "b3971b9654cdcc4475d172a9693d80139644a9f21f5ca8cc0e54349ab8d5970f",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/river-forge-v1.0.0/partitions.bin"
+        },
+        {
+          "name": "boot_app0.bin",
+          "offset": "0xe000",
+          "size": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/river-forge-v1.0.0/boot_app0.bin"
+        },
+        {
+          "name": "app.bin",
+          "offset": "0x10000",
+          "size": 688256,
+          "sha256": "76e519c4716c510b47208a9669132b982242510f57ac3a65bb057a85ef4db23f",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/river-forge-v1.0.0/app.bin"
+        }
+      ]
+    },
+    {
+      "id": "sky-pilot",
+      "name": "Sky Pilot",
+      "version": "1.0.0",
+      "device": "Cardputer XL",
+      "chip": "esp32s3",
+      "category": "Games",
+      "description": "3D flight sim from CardputerXL as its own firmware: fly with the Joystick2, menus driven by the stick, calibration screen.",
+      "notes": "",
+      "flash_size": "8MB",
+      "reset": "default",
+      "baud": 921600,
+      "released": "2026-11-09",
+      "files": [
+        {
+          "name": "bootloader.bin",
+          "offset": "0x0",
+          "size": 20112,
+          "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/sky-pilot-v1.0.0/bootloader.bin"
+        },
+        {
+          "name": "partitions.bin",
+          "offset": "0x8000",
+          "size": 3072,
+          "sha256": "b3971b9654cdcc4475d172a9693d80139644a9f21f5ca8cc0e54349ab8d5970f",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/sky-pilot-v1.0.0/partitions.bin"
+        },
+        {
+          "name": "boot_app0.bin",
+          "offset": "0xe000",
+          "size": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/sky-pilot-v1.0.0/boot_app0.bin"
+        },
+        {
+          "name": "app.bin",
+          "offset": "0x10000",
+          "size": 773264,
+          "sha256": "e1aac60efe1aa0dde17086a1c8bd2fe4b68c3db58d71b446f0f3251507cc0d9f",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/sky-pilot-v1.0.0/app.bin"
+        }
+      ]
+    },
+    {
+      "id": "slideways",
+      "name": "Slideways",
+      "version": "1.0.0",
+      "device": "Cardputer XL",
+      "chip": "esp32s3",
+      "category": "Games",
+      "description": "Full-3D drift racer: all 10 Slideways tracks, 7 cars, arcade drift physics with turbo, 3 AI rivals, race and time attack, synthesized engine and tyre sounds.",
+      "notes": "",
+      "flash_size": "4MB",
+      "reset": "default",
+      "baud": 921600,
+      "released": "2026-11-10",
+      "files": [
+        {
+          "name": "bootloader.bin",
+          "offset": "0x0",
+          "size": 20112,
+          "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/slideways-v1.0.0/bootloader.bin"
+        },
+        {
+          "name": "partitions.bin",
+          "offset": "0x8000",
+          "size": 3072,
+          "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/slideways-v1.0.0/partitions.bin"
+        },
+        {
+          "name": "boot_app0.bin",
+          "offset": "0xe000",
+          "size": 8192,
+          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/slideways-v1.0.0/boot_app0.bin"
+        },
+        {
+          "name": "app.bin",
+          "offset": "0x10000",
+          "size": 620032,
+          "sha256": "461ec09fef16ca7360e139b5e17926e6acb5d195f22d734bfc8e34620a69e0f6",
+          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/slideways-v1.0.0/app.bin"
+        }
+      ]
+    }
+  ],
+  "updated": "2026-11-10"
+}
