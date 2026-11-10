@@ -46,50 +46,6 @@
       ]
     },
     {
-      "id": "doom",
-      "name": "Doom (shareware)",
-      "version": "1.1.0",
-      "device": "Cardputer XL",
-      "chip": "esp32s3",
-      "category": "Games",
-      "description": "Doom shareware episode on the Cardputer XL at about 27 fps on the external screen. Joystick2 turns and walks, arrows strafe, ' or G0 fires, l uses; Opt opens quick settings (volume, brightness, turn speed, screen, calibration). Saves to flash.",
-      "notes": "Based on romalik/m5cardputer_doom (GBADoom / prBoom, GPL-2.0).",
-      "flash_size": "8MB",
-      "reset": "default",
-      "baud": 921600,
-      "released": "2026-11-09",
-      "files": [
-        {
-          "name": "bootloader.bin",
-          "offset": "0x0",
-          "size": 20112,
-          "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
-          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/doom-v1.1.0/bootloader.bin"
-        },
-        {
-          "name": "partitions.bin",
-          "offset": "0x8000",
-          "size": 3072,
-          "sha256": "1df578d7448730186a5301a69ba2c1d77c627b9f2014e1ec40581cf7dd60b563",
-          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/doom-v1.1.0/partitions.bin"
-        },
-        {
-          "name": "boot_app0.bin",
-          "offset": "0xe000",
-          "size": 8192,
-          "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
-          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/doom-v1.1.0/boot_app0.bin"
-        },
-        {
-          "name": "app.bin",
-          "offset": "0x10000",
-          "size": 5880624,
-          "sha256": "4f2a9008e676cbb71956f7de0d45d4e9ff1ad01b48a9b0c66da1ccb17a6233bb",
-          "url": "https://github.com/szuszjan/esp32-app-store/releases/download/doom-v1.1.0/app.bin"
-        }
-      ]
-    },
-    {
       "id": "duskos",
       "name": "DuskOS",
       "version": "0.11.0",
